@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.root.audiorecorder.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="Recorging Audio"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/presence_audio_online"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="67dp"
+        android:onClick="start"
+        android:text="@string/rec_b"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="40dp"
+        android:onClick="stop"
+        android:text="@string/stop_b"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="play"
+        android:text="@string/play_b"/>
+
+</RelativeLayout>
